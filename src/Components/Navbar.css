@@ -1,0 +1,68 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  mix-blend-mode: darken;
+  /* border: 1.5px solid rgb(0 0 0 / 12%); */
+}
+.navbar {
+  position: sticky;
+}
+.nav-item{
+    margin: 0 5px;
+}
+.nav-link {
+  color: rgb(2, 2, 2);
+  position: relative;
+  cursor: pointer;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(90deg, #1c1e20 0%, #ee041a 100%);
+  border-radius: 10px;
+  height: 3.5px;
+  bottom: 6.5px;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.nav-link:hover::before {
+  width: 70%;
+  transform: translateX(0);
+  opacity: 1;
+}
+.nav-link:hover {
+  color: orange;
+}
+.contact-btn{
+  font-weight: 500;
+  font-size: medium;
+  background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(0 0 0 / 40%) 100%);
+  padding: 3px 20px;
+  border: none;
+  outline: 0.5px solid transparent;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.contact-btn:hover {
+  color: #0a0a0b;
+  background: rgb(0 0 0 / 23%);
+  outline: 0.5px solid #443a3a;
+}
+
+
+
+  
+
+
